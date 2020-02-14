@@ -27,10 +27,11 @@ function addDatoscementerio() {
         layercementerio  = new L.GeoJSON.AJAX(urlcementerio, {
             onEachFeature: function (feature, layer) {
 
-                popupContent = "<b>" + feature.properties.EQUIPAMENT + "</b>"+
-                "<br>" + feature.properties.TIPUS_VIA +
-                ". " + feature.properties.NOM_CARRER +
-                "<b> " + feature.properties.NUM_CARRER_1 + "</b>";
+                 popupContent = "<b>" + feature.properties.CEMGI + "</b>"+
+                "<br>" + 'AREA ESTRUCTURA: ' +
+                ". " + feature.properties.AREA +
+                "<br>" + 'PERIMETRO ESTRUCTURA: ' +
+                "<br>" + feature.properties.PERIMETER ;
                 layer.bindPopup(popupContent);
             },
             pointToLayer: function (feature, latlng) {
@@ -63,10 +64,11 @@ function addDatoscementerio() {
         layersepulturasA  = new L.GeoJSON.AJAX(urlsepulturasA, {
             onEachFeature: function (feature, layer) {
 
-                popupContent = "<b>" + feature.properties.NOMDPT + "</b>"+
-                "<br>" + feature.properties.TIPUS_VIA +
-                ". " + feature.properties.NOM_CARRER +
-                "<b> " + feature.properties.NUM_CARRER_1 + "</b>";
+               popupContent = "<b>" + feature.properties.NOMDPT + "</b>"+
+                "<br>" + 'TIPO DE SEPULTURA: ' +
+                ". " + feature.properties.TIPUSCONST +
+                "<br>" + 'AÑO DE CONSTRUCCIÓN: ' +
+                "<br>" + feature.properties.ANY_CONST ;
                 layer.bindPopup(popupContent);
             },
             pointToLayer: function (feature, latlng) {
@@ -84,10 +86,11 @@ function addDatoscementerio() {
         layerA = new L.GeoJSON.AJAX(urlA, {
             onEachFeature: function (feature, layer) {
 
-                popupContent = "<b>" + feature.properties.EQUIPAMENT + "</b>"+
-                "<br>" + feature.properties.TIPUS_VIA +
-                ". " + feature.properties.NOM_CARRER +
-                " " + feature.properties.NUM_CARRER_1 + "</b>";
+                popupContent = "<b>" + feature.properties.NOMDPT + "</b>"+
+                "<br>" + 'TIPO DE SEPULTURA: ' +
+                ". " + feature.properties.TIPUSCONST +
+                "<br>" + 'AÑO DE CONSTRUCCIÓN: ' +
+                "<br>" + feature.properties.ANY_CONST ;
                 layer.bindPopup(popupContent);
             },
             pointToLayer: function (feature, latlng) {
@@ -105,10 +108,11 @@ function addDatoscementerio() {
         layerC = new L.GeoJSON.AJAX(urlC, {
             onEachFeature: function (feature, layer) {
 
-                popupContent = "<b>" + feature.properties.EQUIPAMENT + "</b>"+
-                "<br>" + feature.properties.TIPUS_VIA +
-                ". " + feature.properties.NOM_CARRER +
-                " " + feature.properties.NUM_CARRER_1 + "</b>";
+                popupContent = "<b>" + feature.properties.NOMDPT + "</b>"+
+                "<br>" + 'TIPO DE SEPULTURA: ' +
+                ". " + feature.properties.TIPUSCONST +
+                "<br>" + 'AÑO DE CONSTRUCCIÓN: ' +
+                "<br>" + feature.properties.ANY_CONST ;
                 layer.bindPopup(popupContent);
             },
             pointToLayer: function (feature, latlng) {
@@ -126,10 +130,11 @@ function addDatoscementerio() {
         layerH = new L.GeoJSON.AJAX(urlH, {
             onEachFeature: function (feature, layer) {
 
-                popupContent = "<b>" + feature.properties.EQUIPAMENT + "</b>"+
-                "<br>" + feature.properties.TIPUS_VIA +
-                ". " + feature.properties.NOM_CARRER +
-                " " + feature.properties.NUM_CARRER_1 + "</b>";
+                popupContent = "<b>" + feature.properties.NOMDPT + "</b>"+
+                "<br>" + 'TIPO DE SEPULTURA: ' +
+                ". " + feature.properties.TIPUSCONST +
+                "<br>" + 'AÑO DE CONSTRUCCIÓN: ' +
+                "<br>" + feature.properties.ANY_CONST ;
                 layer.bindPopup(popupContent);
             },
             pointToLayer: function (feature, latlng) {
@@ -147,10 +152,11 @@ function addDatoscementerio() {
         layerN = new L.GeoJSON.AJAX(urlN, {
             onEachFeature: function (feature, layer) {
 
-                popupContent = "<b>" + feature.properties.EQUIPAMENT + "</b>"+
-                "<br>" + feature.properties.TIPUS_VIA +
-                ". " + feature.properties.NOM_CARRER +
-                " " + feature.properties.NUM_CARRER_1 + "</b>";
+                popupContent = "<b>" + feature.properties.NOMDPT + "</b>"+
+                "<br>" + 'TIPO DE SEPULTURA: ' +
+                ". " + feature.properties.TIPUSCONST +
+                "<br>" + 'AÑO DE CONSTRUCCIÓN: ' +
+                "<br>" + feature.properties.ANY_CONST ;
                 layer.bindPopup(popupContent);
             },
             pointToLayer: function (feature, latlng) {
@@ -168,10 +174,11 @@ function addDatoscementerio() {
         layerP = new L.GeoJSON.AJAX(urlP, {
             onEachFeature: function (feature, layer) {
 
-                popupContent = "<b>" + feature.properties.EQUIPAMENT + "</b>"+
-                "<br>" + feature.properties.TIPUS_VIA +
-                ". " + feature.properties.NOM_CARRER +
-                " " + feature.properties.NUM_CARRER_1 + "</b>";
+                popupContent = "<b>" + feature.properties.NOMDPT + "</b>"+
+                "<br>" + 'TIPO DE SEPULTURA: ' +
+                ". " + feature.properties.TIPUSCONST +
+                "<br>" + 'AÑO DE CONSTRUCCIÓN: ' +
+                "<br>" + feature.properties.ANY_CONST ;
                 layer.bindPopup(popupContent);
             },
             pointToLayer: function (feature, latlng) {
@@ -189,10 +196,11 @@ function addDatoscementerio() {
         layerT = new L.GeoJSON.AJAX(urlT, {
             onEachFeature: function (feature, layer) {
 
-                popupContent = "<b>" + feature.properties.EQUIPAMENT + "</b>"+
-                "<br>" + feature.properties.TIPUS_VIA +
-                ". " + feature.properties.NOM_CARRER +
-                " " + feature.properties.NUM_CARRER_1 + "</b>";
+                popupContent = "<b>" + feature.properties.NOMDPT + "</b>"+
+                "<br>" + 'TIPO DE SEPULTURA: ' +
+                ". " + feature.properties.TIPUSCONST +
+                "<br>" + 'AÑO DE CONSTRUCCIÓN: ' +
+                "<br>" + feature.properties.ANY_CONST ;
                 layer.bindPopup(popupContent);
             },
             pointToLayer: function (feature, latlng) {
@@ -208,7 +216,7 @@ function addDatoscementerio() {
             }
         }).addTo(map);
 
-        map.setView([41.97241131969834, 2.8368261647715087],17);
+        map.setView([41.97241131969834, 2.8368261647715087],18);
         
         controlCapas.addOverlay(layercementerio,"Cimenterio");
         controlCapas.addOverlay(layerA,"A");
