@@ -42,9 +42,9 @@ function addDatoscementerio() {
             onEachFeature: function (feature, layer) {
 
                 popupContent = "<b>" + feature.properties.NOMDPT + "</b>"+
-                "<br>" + TIPO DE SEPULTURA +
+                "<br>" + 'TIPO DE SEPULTURA' +
                 ". " + feature.properties.TIPUSCONST +
-                " " + feature.properties.ANY_CONST + "</b>";
+                "<br>" + feature.properties.ANY_CONST + "</b>";
                 layer.bindPopup(popupContent);
             },
             pointToLayer: function (feature, latlng) {
@@ -62,10 +62,10 @@ function addDatoscementerio() {
         layersepulturasA  = new L.GeoJSON.AJAX(urlsepulturasA, {
             onEachFeature: function (feature, layer) {
 
-                popupContent = "<b>" + feature.properties.EQUIPAMENT + "</b>"+
+                popupContent = "<b>" + feature.properties.NOMDPT + "</b>"+
                 "<br>" + feature.properties.TIPUS_VIA +
                 ". " + feature.properties.NOM_CARRER +
-                " " + feature.properties.NUM_CARRER_1 + "</b>";
+                "<b> " + feature.properties.NUM_CARRER_1 + "</b>";
                 layer.bindPopup(popupContent);
             },
             pointToLayer: function (feature, latlng) {
