@@ -44,7 +44,7 @@ function addDatoscementerio() {
                 popupContent = "<b>" + feature.properties.NOMDPT + "</b>"+
                 "<br>" + 'TIPO DE SEPULTURA' +
                 ". " + feature.properties.TIPUSCONST +
-                "<br>" + feature.properties.ANY_CONST + "</b>";
+                "<br>" + feature.properties.ANY_CONST ;
                 layer.bindPopup(popupContent);
             },
             pointToLayer: function (feature, latlng) {
