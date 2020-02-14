@@ -42,8 +42,9 @@ function addDatoscementerio() {
             onEachFeature: function (feature, layer) {
 
                 popupContent = "<b>" + feature.properties.NOMDPT + "</b>"+
-                "<br>" + 'TIPO DE SEPULTURA' +
+                "<br>" + 'TIPO DE SEPULTURA: ' +
                 ". " + feature.properties.TIPUSCONST +
+                "<br>" + 'AÑO DE CONSTRUCCIÓN: ' +
                 "<br>" + feature.properties.ANY_CONST ;
                 layer.bindPopup(popupContent);
             },
