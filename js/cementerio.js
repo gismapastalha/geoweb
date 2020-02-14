@@ -30,7 +30,7 @@ function addDatoscementerio() {
                 popupContent = "<b>" + feature.properties.EQUIPAMENT + "</b>"+
                 "<br>" + feature.properties.TIPUS_VIA +
                 ". " + feature.properties.NOM_CARRER +
-                " " + feature.properties.NUM_CARRER_1 + "</b>";
+                "<b> " + feature.properties.NUM_CARRER_1 + "</b>";
                 layer.bindPopup(popupContent);
             },
             pointToLayer: function (feature, latlng) {
