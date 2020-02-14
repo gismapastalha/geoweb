@@ -41,10 +41,10 @@ function addDatoscementerio() {
         layersepulturas  = new L.GeoJSON.AJAX(urlsepulturas, {
             onEachFeature: function (feature, layer) {
 
-                popupContent = "<b>" +'NOMDPT ='+ ""+ feature.properties.NOMDPT + "</b>"+
-                "<br>" + feature.properties.TIPUSCONST +
-                ". " + feature.properties.ANY_CONST +
-                " " + feature.properties.ATRIBUT + "</b>";
+                popupContent = "<b>" + feature.properties.NOMDPT + "</b>"+
+                "<br>" + "TIPO DE SEPULTURA :" +
+                ". " + feature.properties.TIPUSCONST +
+                " " + feature.properties.ANY_CONST + "</b>";
                 layer.bindPopup(popupContent);
             },
             pointToLayer: function (feature, latlng) {
